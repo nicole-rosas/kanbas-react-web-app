@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Edit Assignment</title>
+    </head>
+    <body>
+        <!--   buttons     -->
+        <select id="select-one-edit-assignment">
+            <option selected value="SPEEDGRADER">SpeedGrader</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <hr>
+        <!--  Assignment  -->
+        <h3>Assignment Name</h3>
+        <form id="edit-assignments">
+            <input id="edit-assignment-name" value="A1 - ENV + HTML"/><br/><br/>
+
+            <textarea id="edit-assignment-description">This is the assignment description</textarea><br/><br/>
+
+            <label for="edit-assignment-points">Points</label><br/>
+            <input id="edit-assignment-points" value="100"/><br/><br/>
+
+            <label for="edit-assignment-group">Assignment Group</label><br/>
+            <select id="edit-assignment-group">
+                <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+                <option value="N/A">N/A</option>
+            </select><br/><br/>
+
+            <label for="edit-assignment-display-grade">Display Grade as</label><br/>
+            <select id="edit-assignment-display-grade">
+                <option selected value="PERCENTAGE">Percentage</option>
+                <option value="N/A">N/A</option>
+            </select><br/><br/>
+
+            <label for="edit-assignment-submission-type">Submission Type</label><br/>
+            <select id="edit-assignment-submission-type">
+                <option selected value="ONLINE">Online</option>
+                <option value="N/A">N/A</option>
+            </select><br/><br/>
+
+            <label>Online Entry Options</label><br/>
+            <input type="checkbox" value="TEXT-ENTRY" name="radio-online-options" id="radio-text-entry"/>
+            <label for="radio-text-entry">Text Entry</label><br/>
+            <input type="checkbox" value="WEBSITE-URL" name="radio-online-options" id="radio-website-url"/>
+            <label for="radio-website-url">Website URL</label><br/>
+            <input type="checkbox" value="MEDIA-RECORDINGS" name="radio-online-options" id="radio-media-recordings"/>
+            <label for="radio-media-recordings">Media Recordings</label><br/>
+            <input type="checkbox" value="STUDENT-ANNOTATION" name="radio-online-options" id="radio-student-annotation"/>
+            <label for="radio-student-annotation">Student Annotations</label><br/>
+            <input type="checkbox" value="FILE-UPLOADS" name="radio-online-options" id="radio-file-uploads"/>
+            <label for="radio-file-uploads">File Uploads</label><br/><br/>
+
+            Assign<br/>
+            Assign to<br/>
+            <input id="edit-assignment-assign-to" value="Everyone"/><br/><br/>
+
+            <label for="edit-assignment-due">Due</label><br/>
+            <input type="date" id="edit-assignment-due" value="2021-01-01"/><br/><br/>
+
+            <label for="edit-assignment-available">Available from</label><br/>
+            <input type="date" id="edit-assignment-available" value="2021-01-01"/><br/><br/>
+
+            <label for="edit-assignment-until">Until</label><br/>
+            <input type="date" id="edit-assignment-until" value="2021-01-01"/><br/><br/>
+
+            <button type="button" onclick="window.location.href = '/Kanbas/Courses/Assignments/screen.html';">Cancel</button>
+
+            <button type="button" onclick="window.location.href = '/Kanbas/Courses/Assignments/screen.html';">Save</button>
+        </form>
+    </body>
+</html>

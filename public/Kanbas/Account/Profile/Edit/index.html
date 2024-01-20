@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Edit Profile</title>
+    </head>
+    <body>
+        <h2>Jose Annunziato</h2>
+        <br/>
+        <form id="edit-profile">
+            <label for="edit-profile-name">Name:*</label>
+            <input id="edit-profile-name" value="Jose Annunziato"/>
+            <label for="edit-profile-pronouns">Pronouns:</label>
+            <select id="edit-profile-pronouns">
+                <option selected value="N/A">None</option>
+                <option value="SHE/HER">She/Her</option>
+                <option value="HE/HIM">He/Him
+                <option value="THEY/THEM">They/Them</option>
+            </select><br/><br/>
+            <label for="edit-profile-title">Title:</label>
+            <input id="edit-profile-title"/><br/><br/>
+
+            <h3>Contact</h3>
+            No registered services, you can add some on the <a href="#">settings</a> page.
+
+            <h3>Contact</h3>
+            No registered services, you can add some on the <a href="#">settings</a> page.
+
+            <h3>Biography</h3>
+            Faculty, Software Engineer, AI, Space, and renewables enthusiast.<br/>
+            <textarea cols="60" rows="3">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <p style="color:blue"><a href="https://www.youtube.com">YouTube</a> Links to an external site.</p>
+                </li>
+            </ul>
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 168px; text-align: center">
+                            <b>Title</b>
+                        </td>
+                        <td style="width: 15px;"></td>
+                        <td style="width: 168px; text-align: center">
+                            <b>URL</b>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input id="edit-profile-link-text" value="YouTube"/>
+            →
+            <input id="edit-profile-link" value="https://www.youtube.com"/>
+            <a href="#">Remove</a><br/>
+            <button type="button" id="edit-profile-link-add">Add another link</button><br/>
+            <button type="button" id="edit-profile-link-cancel">Cancel</button>
+            <button type="button" id="edit-profile-link-save">Save Profile</button><br/>
+            <button type="button" id="edit-profile-link-edit">Edit Profile</button>
+            <button type="button" id="edit-profile-link-cancel-edit">Cancel Editing</button>
+        </form>
+    </body>
+</html>

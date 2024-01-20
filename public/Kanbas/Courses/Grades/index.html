@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Grades</title>
+    </head>
+    <body>
+        <!-- search -->
+        <select id="select-one-gradebook">
+            <option selected value="GRADEBOOK">Gradebook</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <button id="import" type="button">Import</button>
+        <select id="select-one-export">
+            <option selected value="EXPORT">Export</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <button id="configure" type="button">Configure</button>
+        <br/>
+        <h2>Student Names</h2>
+        <input type="text" id="text-fields-student-name" placeholder="Search Students"/>
+        <h2>Assignment Names</h2>
+        <input type="text" id="text-fields-assignment" placeholder="Search Assignments"/>
+        <br/><br/>
+        <button id="apply-filters" type="button">Apply Filters</button>
+        <br/><br/>
+        <!-- table -->
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Quiz 1 <br> Out of 50</th>
+                    <th>Quiz 2 <br> Out of 50</th>
+                    <th>Quiz 3 <br> Out of 50</th>
+                    <th>Quiz 4 <br> Out of 50</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Alice B</td>
+                <td>48</td>
+                <td>39</td>
+                <td>37</td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>Carlos D</td>
+                <td>48</td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>37</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>Edith F</td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>59</td>
+                <td>43</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>George H</td>
+                <td>50</td>
+                <td>29</td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>48</td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
