@@ -1,0 +1,76 @@
+.course-main-shift {
+    padding-left: 60px;
+    width: 100%;
+}
+
+@media(width: 765px) {
+    .course-main-shift {
+    /*    make padding 0*/
+    }
+}
+
+.course-home-top-navigation {
+    background-color: black;
+    min-width: 100%;
+    position: absolute;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+}
+
+.course-home-top-navigation i {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.course-home-top-navigation p {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.course-navigation-collapse {
+    padding-top:110px;
+    padding-left: 30px;
+    min-width: 500px;
+    margin: 0;
+    background-color: white;
+}
+
+#collapse-kanbas-navigation {
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: 10000;
+    margin: 0;
+}
+
+.kanbas-navigation-collapse {
+    padding-top:50px;
+    padding-left: 30px;
+    min-width: 500px;
+    margin: 0;
+    background-color: white;
+}
+
+.course-navigation-link {
+    text-decoration: none;
+    color: darkred;
+    margin-bottom: 15px;
+}
+
+.course-navigation-link i{
+    /*margin-bottom: 20px;*/
+    padding-top: 4px;
+    padding-right: 10px;
+}
+
+.course-navigation-link:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+.kanbas-navigation-collapse div > a > i {
+    width: 2em;
+}

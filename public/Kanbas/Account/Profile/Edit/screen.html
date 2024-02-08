@@ -1,38 +1,49 @@
 <html>
 <head>
     <title>Profile</title>
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet"/>
 </head>
 <body>
-<table>
-    <tbody>
-    <tr>
-        <!-- Kanbas Navigation -->
-        <td valign="top">
-            <ul>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="wd-kanbas-navigation">
                 <li>
-                    <a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                    <img src="/images/neu.png" height="40px"></li>
+                <li class="wd-account-active">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa-solid fa-user"></i> Account</a></li>
                 <li>
-                    <a href="#">Dashboard</a>
-                </li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa-solid fa-gauge"></i> Dashboard</a></li>
                 <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa-solid fa-book"></i> Courses</a> </li>
                 <li>
-                    <a href="#">Calendar</a></li>
+                    <a href="#">
+                        <i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
                 <li>
-                    <a href="#">Inbox</a></li>
+                    <a href="#">
+                        <i class="fa-solid fa-inbox"></i> Inbox</a></li>
                 <li>
-                    <a href="#l">History</a></li>
+                    <a href="#">
+                        <i class="fa-solid fa-clock"></i> History</a></li>
                 <li>
-                    <a href="#">Studio</a></li>
+                    <a href="#">
+                        <i class="fa-solid fa-desktop"></i> Studio</a></li>
                 <li>
-                    <a href="#">Commons</a></li>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Commons</a></li>
                 <li>
-                    <a href="#">Help</a></li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-question"></i><br/> Help</a></li>
             </ul>
-        </td>
-        <!-- Account Navigation -->
-        <td valign="top">
+        </div>
+        <div class="col">
             <ul>
                 <li>
                     <a href="#">Notifications</a>
@@ -62,9 +73,8 @@
                     <a href="#">Global Announcements</a>
                 </li>
             </ul>
-        </td>
-        <!--  Assignments   -->
-        <td valign="top">
+        </div>
+        <div class="col">
             <h2>Jose Annunziato</h2>
             <br/>
             <form id="edit-profile">
@@ -115,13 +125,13 @@
                 <a href="#">Remove</a><br/>
                 <button type="button" id="edit-profile-link-add">Add another link</button><br/>
                 <button type="button" id="edit-profile-link-cancel">Cancel</button>
-                <button type="button" id="edit-profile-link-save">Save Profile</button><br/>
-                <button type="button" id="edit-profile-link-edit">Edit Profile</button>
-                <button type="button" id="edit-profile-link-cancel-edit">Cancel Editing</button>
+                <button type="button" id="edit-profile-link-save"><a href="../screen.html">Save Profile</a></button><br/>
+                <button type="button" id="edit-profile-link-edit"><a href="screen.html">Edit Profile</a></button>
+                <button type="button" id="edit-profile-link-cancel-edit"><a href="../screen.html">Cancel Editing</a></button>
             </form>
-        </td>
-    </tr>
-    </tbody>
-</table>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

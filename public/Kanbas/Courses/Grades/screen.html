@@ -1,151 +1,142 @@
 <html>
-    <head>
-        <title>Grades</title>
-    </head>
-    <body>
-        <table>
-            <tbody>
-            <tr>
-                <!-- Kanbas Navigation -->
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a></li>
-                        <li>
-                            <a href="#">Inbox</a></li>
-                        <li>
-                            <a href="#l">History</a></li>
-                        <li>
-                            <a href="#">Studio</a></li>
-                        <li>
-                            <a href="#">Commons</a></li>
-                        <li>
-                            <a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!-- Course Navigation -->
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                        <li>
-                            <a href="#">Modules</a></li>
-                        <li>
-                            <a href="#">Piazza</a></li>
-                        <li>
-                            <a href="#">Zoom Meetings</a></li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                        <li>
-                            <a href="#">Quizzes</a></li>
-                        <li>
-                            <a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                        <li>
-                            <a href="#">People</a></li>
-                        <li>
-                            <a href="#">Panopto Video</a></li>
-                        <li>
-                            <a href="#">Discussions</a></li>
-                        <li>
-                            <a href="#">Announcements</a></li>
-                        <li>
-                            <a href="#">Pages</a></li>
-                        <li>
-                            <a href="#">Files</a></li>
-                        <li>
-                            <a href="#">Rubrics</a></li>
-                        <li>
-                            <a href="#">Outcomes</a></li>
-                        <li>
-                            <a href="#">Collaborations</a></li>
-                        <li>
-                            <a href="#">Syllabus</a></li>
-                        <li>
-                            <a href="#">Settings</a></li>
-                    </ul>
-                </td>
-                <!--  Grades table   -->
-                <td valign="top">
-                    <!-- search -->
-                    <select id="select-one-gradebook">
-                        <option selected value="GRADEBOOK">Gradebook</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <button id="import" type="button">Import</button>
-                    <select id="select-one-export">
-                        <option selected value="EXPORT">Export</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <button id="configure" type="button">Configure</button>
-                    <br/>
-                    <h2>Student Names</h2>
-                    <input type="text" id="text-fields-student-name" placeholder="Search Students"/>
-                    <h2>Assignment Names</h2>
-                    <input type="text" id="text-fields-assignment" placeholder="Search Assignments"/>
-                    <br/><br/>
-                    <button id="apply-filters" type="button">Apply Filters</button>
-                    <br/><br/>
-                    <!-- table -->
-                    <table border="1" width="100%">
-                        <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>Quiz 1 <br> Out of 50</th>
-                            <th>Quiz 2 <br> Out of 50</th>
-                            <th>Quiz 3 <br> Out of 50</th>
-                            <th>Quiz 4 <br> Out of 50</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Alice B</td>
-                            <td>48</td>
-                            <td>39</td>
-                            <td>37</td>
-                            <td>
-                                <input type="number">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Carlos D</td>
-                            <td>48</td>
-                            <td>
-                                <input type="number">
-                            </td>
-                            <td>37</td>
-                            <td>36</td>
-                        </tr>
-                        <tr>
-                            <td>Edith F</td>
-                            <td>
-                                <input type="number">
-                            </td>
-                            <td>59</td>
-                            <td>43</td>
-                            <td>38</td>
-                        </tr>
-                        <tr>
-                            <td>George H</td>
-                            <td>50</td>
-                            <td>29</td>
-                            <td>
-                                <input type="number">
-                            </td>
-                            <td>48</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </body>
+<head>
+    <title>Grades</title>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="../index.css"/>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet"/>
+</head>
+<body>
+    <table>
+        <tbody>
+        <tr>
+            <!-- Kanbas Navigation -->
+            <td valign="top">
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <img src="/images/neu.png" height="40px"></li>
+                    <li class="wd-account">
+                        <a href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fa-solid fa-user"></i> Account</a></li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html">
+                            <i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                    <li  class="wd-active">
+                        <a href="/Kanbas/Courses/Home/screen.html">
+                            <i class="fa-solid fa-book"></i> Courses</a> </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-inbox"></i> Inbox</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-clock"></i> History</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-desktop"></i> Studio</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Commons</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-question"></i><br/> Help</a></li>
+                </ul>
+            </td>
+            <!-- Course Navigation -->
+            <td valign="top">
+                <ul class="wd-navigation course-grades">
+                    <li>
+                        <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li>
+                        <a href="#">Modules</a>
+                    </li>
+                    <li><a href="http://piazza.com">Piazza</a></li>
+                    <li><a href="#">Zoom</a></li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                    </li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                </ul>
+            </td>
+            <!--  Grades table   -->
+            <td valign="top">
+                <!-- search -->
+                <select id="select-one-gradebook">
+                    <option selected value="GRADEBOOK">Gradebook</option>
+                    <option value="N/A">N/A</option>
+                </select>
+                <button id="import" type="button">Import</button>
+                <select id="select-one-export">
+                    <option selected value="EXPORT">Export</option>
+                    <option value="N/A">N/A</option>
+                </select>
+                <button id="configure" type="button">Configure</button>
+                <br/>
+                <h2>Student Names</h2>
+                <input type="text" id="text-fields-student-name" placeholder="Search Students"/>
+                <h2>Assignment Names</h2>
+                <input type="text" id="text-fields-assignment" placeholder="Search Assignments"/>
+                <br/><br/>
+                <button id="apply-filters" type="button">Apply Filters</button>
+                <br/><br/>
+                <!-- table -->
+                <table border="1" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Quiz 1 <br> Out of 50</th>
+                        <th>Quiz 2 <br> Out of 50</th>
+                        <th>Quiz 3 <br> Out of 50</th>
+                        <th>Quiz 4 <br> Out of 50</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Alice B</td>
+                        <td>48</td>
+                        <td>39</td>
+                        <td>37</td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carlos D</td>
+                        <td>48</td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>37</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>Edith F</td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>59</td>
+                        <td>43</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td>George H</td>
+                        <td>50</td>
+                        <td>29</td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>48</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</body>
 </html>

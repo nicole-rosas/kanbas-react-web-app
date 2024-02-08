@@ -1,0 +1,69 @@
+body * {
+    padding: 0px;
+}
+
+.course-container{
+    margin-left: 80px;
+}
+
+.course-kanbas-navigation {
+    padding: 0;
+    margin: 0;
+    width: 0px;
+}
+
+.course-home-navigation {
+    padding: 0;
+    margin: 0;
+    max-width: min-content;
+}
+
+.course-home-modules {
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width: 762px) {
+    .course-home-modules {
+        padding-top: 70px;
+    }
+}
+
+.course-grades {
+    margin-left: 100px;
+}
+
+.course-header {
+    display: flex;
+}
+
+.course-header a {
+    color: darkred;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.course-header a:hover {
+    text-decoration: underline;
+}
+
+.course-header i {
+    color: darkred;
+    font-size: 2em;
+    margin-left: 50px;
+}
+
+.course-header p {
+    font-size: 1.5em;
+    margin-left: 10px;
+    max-width: max-content;
+}
+
+.course-status {
+    max-width: max-content;
+}
+
+.home-screen-course {
+    padding-left: 70px;
+}

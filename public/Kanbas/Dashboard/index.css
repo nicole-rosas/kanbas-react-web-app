@@ -1,0 +1,42 @@
+.course-icon {
+    color: gray;
+    font-size: 1.5em;
+}
+
+.class-name {
+    color: dimgray;
+    font-size: 1em;
+    margin-bottom: .5em;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.class-code {
+    color: dimgray;
+    font-size: .8em;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+
+.class-description {
+    color: dimgray;
+    font-size: .6em;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.card-title:hover {
+    text-decoration: maroon underline;
+}
+
+.card-title {
+    text-decoration: none;
+}
+
+.kanbas-navigation {
+    margin-left: 80px;
+}
+
