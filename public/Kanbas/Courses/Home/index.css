@@ -71,6 +71,6 @@
     color: darkred;
 }
 
-.kanbas-navigation-collapse div > a > i {
-    width: 2em;
+.collapse-exit {
+    justify-content: end;
 }
