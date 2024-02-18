@@ -1,0 +1,69 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;  margin: 0px;
+    min-width: 84px;
+    max-width: 84px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+}
+
+.wd-kanbas-navigation li {
+    padding: 8px;
+    font-size: 0.8em;  text-align: center;
+}
+
+.wd-kanbas-navigation li.neu-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+    color: red;
+}
+
+.wd-kanbas-navigation li.wd-active a i {
+    color: red;
+}
+
+.wd-kanbas-navigation li.wd-account {
+    color: white;
+}
+
+.wd-kanbas-navigation li.wd-account a {
+    color: white;
+}
+
+.wd-kanbas-navigation li.wd-account a i {
+    color: white;
+}
+
+.wd-kanbas-navigation li.wd-account-active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-account-active a {
+    color: red;
+}
+
+.wd-kanbas-navigation li.wd-account-active a i {
+    color: red;
+}
+
+.wd-kanbas-navigation a {
+    color: red;
+    text-decoration: none;
+}
+.wd-kanbas-navigation a i {
+    color: red;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
