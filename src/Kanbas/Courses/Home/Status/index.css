@@ -1,0 +1,77 @@
+.publish {
+    border: 1px solid lightgray;
+    background-color: green;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.publish:hover {
+    border: 1px solid lightgray;
+}
+
+.unpublish {
+    border: 1px solid lightgrey;
+    padding: 6px;
+    background-color: ghostwhite;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.unpublish:hover {
+    border: 1px solid lightgray;
+}
+
+button {
+    margin-right: 5px;
+    border-radius: 1px;
+    padding-top: 3px;
+}
+
+.button-list {
+    padding-left:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 5px;
+    background-color: ghostwhite;
+}
+
+.button-list:hover {
+    border: 1px solid lightgray;
+}
+
+.coming-up {
+    padding-top: 10px;
+}
+
+.calendar {
+    color: maroon;
+}
+
+
+
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+h5 {
+    margin: 0px;
+    color: maroon;
+    font-size: 1.1em;
+}
+
+.lecture {
+    padding-left: 20px;
+}
+
+.lecture p {
+    margin: 0;
+}
+

@@ -1,0 +1,46 @@
+.dashboard {
+    /*margin-left: 85px;*/
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 36px;
+}
+
+.card-text:hover {
+    text-decoration: maroon underline;
+}
+
+.card-text {
+    text-decoration: none;
+    color: navy;
+}
+
+.card-title {
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.card-name {
+    color: dimgray;
+    font-size: .9em;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.course-button {
+    padding-left: 0px;
+    color: dimgray;
+}
+
+.course-button:hover {
+    color: red;
+}
+
+.card-description {
+    color: dimgray;
+    font-size: .6em;
+    font-weight: lighter;
+    margin-bottom: 1em;
+    text-decoration: none;
+}

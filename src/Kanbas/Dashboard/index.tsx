@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { courses } from "../Database";
+import "./index.css";
+import { FaBook } from "react-icons/fa";
 function Dashboard() {
   return (
-    <div className="p-4">
+    <div className="dashboard">
       <h1>Dashboard</h1> <hr />
-      <h2>Published Courses (12)</h2> <hr />
+      <h2>Published Courses (3)</h2> <hr />
       <div className="row">
         <div className="row row-cols-1 row-cols-md-5 g-4">
           {courses.map((course) => (
@@ -18,22 +20,23 @@ function Dashboard() {
                 />
                 <div className="card-body">
                   <Link
-                    className="card-title"
+                    className="card-text"
                     to={`/Kanbas/Courses/${course._id}/Home`}
-                    style={{
-                      textDecoration: "none",
-                      color: "navy",
-                      fontWeight: "bold",
-                    }}
                   >
-                    {course.name}{" "}
+                    <p className="card-title">
+                      {course._id} {course.name}
+                    </p>
+                    <p className="card-name">
+                      {course._id}.{course.number}.{course.semester}
+                    </p>
+                    <p className="card-description">{course.description}</p>
                   </Link>
-                  <p className="card-text">{course.name}</p>
+                  {/*<p className="card-text">{course.name}</p>*/}
                   <Link
                     to={`/Kanbas/Courses/${course._id}/Home`}
-                    className="btn btn-primary"
+                    className="btn course-button"
                   >
-                    Go{" "}
+                    <FaBook className="fs-4" />
                   </Link>
                 </div>
               </div>

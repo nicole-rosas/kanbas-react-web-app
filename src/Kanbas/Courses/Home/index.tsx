@@ -1,11 +1,16 @@
 import ModuleList from "../Modules/List";
+import Status from "./Status/index";
+import "./index.css";
 
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
-      <ModuleList />
-      <h2>Status</h2>
+    <div className="d-flex">
+      <div className="module flex-grow-1">
+        <ModuleList />
+      </div>
+      <div className="status">
+        <Status />
+      </div>
     </div>
   );
 }

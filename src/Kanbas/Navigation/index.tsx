@@ -27,7 +27,7 @@ function KanbasNavigation() {
   return (
     <ul className="wd-kanbas-navigation">
       <li className="neu-logo">
-        <img src="/images/neu.png" height="50px" alt="hi" />
+        <img src="/images/neu.png" height="50px" alt="NEU logo" />
       </li>
       {links.map((link, index) => (
         <li
@@ -40,11 +40,11 @@ function KanbasNavigation() {
             (link.label.includes("Account") ? "wd-account" : "")
           }
         >
-          <Link to={`/Kanbas/${link.label}`}>
+          <Link to={`/Kanbas/${link.label}`} className={"test"}>
             {" "}
             {link.icon}
             <br />
-            {link.label}{" "}
+            <p className={`test1`}>{link.label} </p>
           </Link>
         </li>
       ))}

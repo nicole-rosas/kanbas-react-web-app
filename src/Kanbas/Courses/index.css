@@ -1,0 +1,43 @@
+.course-screen {
+    margin-left: 24px;
+    margin-right: 40px;
+}
+
+.course-header {
+    color: maroon;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.course-header a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: maroon;
+    font-size: .5em;
+    font-weight: normal;
+}
+
+.course-header a:hover {
+    margin-left: 25px;
+    text-decoration: underline maroon;
+}
+
+.course-header p {
+    margin-left: 10px;
+    font-size: .5em;
+    color: #212529;
+    max-width: max-content;
+    font-weight: normal;
+}
+
+hr {
+    margin-top: 11px;
+}
+
+.nav-header {
+    padding-left: 12px;
+    padding-top: 10px;
+    font-size: .7em;
+    font-weight: lighter;
+    font-style: italic;
+}

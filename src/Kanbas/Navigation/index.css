@@ -15,6 +15,16 @@
 .wd-kanbas-navigation li {
     padding: 8px;
     font-size: 0.8em;  text-align: center;
+    text-decoration: none;
+}
+
+.test {
+    text-decoration: none;
+    color: red;
+}
+
+.test1 {
+    color: white;
 }
 
 .wd-kanbas-navigation li.neu-logo {
@@ -25,45 +35,39 @@
 .wd-kanbas-navigation li.wd-active {
     background-color: white;
 }
-
 .wd-kanbas-navigation li.wd-active a {
     color: red;
+    text-decoration: none;
 }
-
-.wd-kanbas-navigation li.wd-active a i {
+.wd-kanbas-navigation li.wd-active p {
     color: red;
+    margin: 0;
 }
 
 .wd-kanbas-navigation li.wd-account {
     color: white;
 }
-
 .wd-kanbas-navigation li.wd-account a {
     color: white;
 }
-
-.wd-kanbas-navigation li.wd-account a i {
+.wd-kanbas-navigation li.wd-account p {
     color: white;
+    text-decoration: none;
+    margin: 0;
 }
 
 .wd-kanbas-navigation li.wd-account-active {
     background-color: white;
 }
-
 .wd-kanbas-navigation li.wd-account-active a {
     color: red;
 }
-
-.wd-kanbas-navigation li.wd-account-active a i {
-    color: red;
-}
-
-.wd-kanbas-navigation a {
+.wd-kanbas-navigation li.wd-account-active p {
     color: red;
     text-decoration: none;
+    margin: 0;
 }
-.wd-kanbas-navigation a i {
-    color: red;
-    font-size: 2.5em;
-    margin-bottom: 5px;
+
+.wd-kanbas-navigation li p {
+    margin: 0;
 }
