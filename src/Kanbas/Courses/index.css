@@ -40,4 +40,110 @@ hr {
     font-size: .7em;
     font-weight: lighter;
     font-style: italic;
+    max-width: max-content;
 }
+
+@media (max-width: 756px) {
+    .nothing {
+        display: none;
+    }
+    .thing {
+        display: none;
+    }
+    .course-screen {
+        /*margin-right:25px*/
+        margin: 0;
+    }
+    .small-thing {
+        display: flex;
+        /*background-color: black;*/
+        /*color: white;*/
+    }
+    .module {
+        margin: 0 25px 0 25px;
+    }
+}
+
+@media (min-width: 756px) {
+    .nothing {
+    }
+    .thing {
+
+    }
+    .small-thing{
+        display: none;
+    }
+}
+
+.small-thing {
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.mobile-kanbas-nav {
+    text-align: left;
+    padding: 10px;
+}
+
+.mobile-course-head {
+    text-align: center;
+}
+
+.mobile-course-nav{
+    text-align: right;
+    padding: 10px;
+}
+
+.mobile-course-list {
+    padding-left: 25px;
+}
+
+.mobile-course-item {
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+.mobile-course-item a {
+    text-decoration: none;
+    color: maroon;
+}
+
+
+.mobile-course-item a:hover {
+    text-decoration: underline;
+}
+
+.mobile-course-item svg {
+    margin-right: 5px;
+}
+
+.mobile-kanbas-list {
+    height: 100vh;
+}
+
+.mobile-kanbas-list svg {
+    margin: 20px 10px 10px 0;
+
+}
+
+.mobile-kanbas-links {
+    padding-top:40px;
+    padding-left:20px;
+}
+
+.mobile-kanbas-item a {
+    text-decoration: none;
+    color:maroon;
+}
+
+.mobile-kanbas-item a:hover {
+    text-decoration: underline;
+}
+
+.mobile-kanbas-item {
+    font-size: 1.2em;
+}
+

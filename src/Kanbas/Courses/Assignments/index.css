@@ -1,0 +1,71 @@
+.assign-page {
+    margin-right: 25px;
+}
+
+.assign-section {
+    margin-bottom: 25px;
+}
+
+.assign-section-item {
+    background-color: ghostwhite;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+    border-radius: 2px;
+    border: 1px solid lightgrey;
+}
+
+.assign-subsection-item {
+    background-color: white;
+    padding: 10px 0 0px 0;
+    border: 1px solid lightgrey;
+    border-left: green 5px solid;
+    font-weight: bold;
+}
+
+.assign-subsection-item a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.assign-subsection-item a:hover {
+    text-decoration: underline;
+    color: #212529;
+}
+
+.book-icon {
+    color:green;
+}
+
+.assign-subsection-item span {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.assign-text {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: max-content;
+}
+
+.assign-text svg {
+    margin-top: 5px;
+}
+
+.mult-module {
+    color: maroon;
+    font-weight: bold;
+}
+
+.due {
+    font-weight: bold;
+    margin-right:2px;
+}
+
+.basic-button {
+    font-size: .9em;
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: ghostwhite;
+    margin-bottom: 5px;
+}

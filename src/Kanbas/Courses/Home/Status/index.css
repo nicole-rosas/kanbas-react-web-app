@@ -38,6 +38,13 @@ button {
     font-size: 1em;
     margin-bottom: 5px;
     background-color: ghostwhite;
+    text-align: left;
+
+}
+
+.button-list svg {
+    margin-left: 5px;
+    margin-bottom:2px;
 }
 
 .button-list:hover {
