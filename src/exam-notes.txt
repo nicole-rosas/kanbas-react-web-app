@@ -1,0 +1,175 @@
+DOM - document object model
+HTTP(s) - hyper text transfer protocol (secure)
+CSS - cascading style sheets
+HTML - hyper text markup language
+URL - uniform resource locator
+WWW - world wide web
+API - application programming interface
+
+label element can refer to another element by setting its for= attribute to the same value as the id= attribute
+of the element that it refers to -> not just for input element
+
+html radio buttons can be made mutually exclusive by making their name= attributes have the same value
+
+it is NOT good practice to make clickable areas of html elements be as small as possible to save space
+
+it is good practice to associate HTML label elements to radio and checkbox buttons to increase clickable area
+
+<___input___  ___id___='XYZ'  ___title___='ABC'  ___placeholder___='RST'/>
+Fill in the blanks to create an input field who's unique identifier is XYZ, has a tooltip that displays ABC,
+and a placeholder that says RST.
+
+<input
+  ___type___="___date___"
+  value="___2011-11-22___"
+/>
+Fill in the blanks to create a date input field who's default value is November 22, 2011.
+
+<___select___  name="role">
+   <___option___  value="___TENURED___">
+       ___Tenured Faculty___
+   </___option___>
+</___select___>
+Fill in the blanks to create a dropdown with a single option that displays as "Tenured Faculty" on the browser,
+but is submitted to the server as "TENURED"
+
+<__label__><__input__ type="__checkbox__" name="radio"/>DSA</__label__>
+<__label__><__input__ type="__checkbox__" name="radio"/>FDS</__label__>
+<__label__><__input__ type="__checkbox__" name="radio"/>GFD</__label__>
+Consider the following set of checkbox buttons. If a user clicks on the text, the button on its left is selected.
+
+<__input__  type="__radio__"  __name__="__color__"/>Yellow
+<__input__  type="__radio__"  __name__="__genre__"/>Drama
+<__1__  type="__2__"  __3__="__6__"/>Red
+<__1__  type="__2__"  __3__="__7__"/>Horror
+<__1__  type="__2__"  __3__="__5__"/>Blue
+<__1__  type="__2__"  __3__="__8__"/>Comedy
+Consider the following sets of radio buttons. One set of radio buttons is for choosing a single color and the other set
+of radio buttons is for choosing a single movie genre. Using "color" and "genre" fill in the blanks above to group the
+radio buttons into a "color" group and "genre" group so that you can select only one color and only one genre,
+but selecting a color does not affect selecting a genre and selecting a genre does not affect selecting a color.
+
+<h1 __id__="asd" __class__="zxc">I'm white on red</h1>
+.asd { background-color: red; color: white } <- id
+#asd { background-color: red }
+.zxc { background-color: blue; color: white }
+#zxc { background-color: blue } <- class
+Fill in the blanks so that the text is guaranteed to render as follows: I'm white on red
+
+<__label__ __for__="last">Last name</__label__>
+<input
+  __value__="Brown"
+  __placeholder__="Lee"
+  __id__="last"
+  __title__="Type your last name"/>
+Fill in the blanks above so that
+    - the input field has an initial value of Brown
+    - when you click on Last name, the input field get focus
+    - when you delete the text in the input field, it shows a grayed hint that says Lee
+    - when you hover of the input field, a tooltip appears hovering on the input field that says Type your last name
+
+best practice to import css in html document is:
+<link href="styles.css" rel="stylesheet"/>
+<p>Lorem Ipsum</p>
+file styles.css in the same directory contains:
+p { color: red }
+
+sets the background color of the heading below:
+<style>h1 { background-color: blue }</style>
+<h1 class="blue">Hello</h1>
+
+options that sets the color of the heading whose Id is "green":
+<style>.red #green { color : green }</style>
+<div class="red">
+  <h1 id="green">Hello</h1>
+</div>
+-
+<style>div#red #green { color : green }</style>
+<div id="red">
+  <h1 id="green">Hello</h1>
+</div>
+-
+<style>.red h1#green { color : green }</style>
+<div class="red">
+  <h1 id="green">Hello</h1>
+</div>
+
+<div __class__="asd">I am red</div>
+<div __id__="qwe">I am blue</div>
+#__qwe__ {
+  color: blue;
+}
+.__asd__ {
+  color: red;
+}
+Fill in the blanks to correctly apply styles using ID and class selectors. The text should display in the color
+described in the text.
+
+<div class="qwe">
+  <div class="asd">My text is red.</div>
+  <div class="zxc">
+    <div class="xcv">My background is green.</div>
+  </div>
+</div>
+.__qwe__ > .__asd__ {
+  __color__: __red__;
+}
+.__qwe__  .__zxc__  .__xcv__ {
+  background-color: __green__;
+}
+
+<div class="__box__">
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
+.box {
+  __border__: 2px solid __red__;
+  padding: 10px;
+}
+.__box__ ul li {
+  background-color: __yellow__;
+}
+Fill in the blanks so that the list is surrounded with a red solid border and has yellow background.
+
+const alice = {  first: 'Alice',  last: 'Wonderland',  salary: 100000};
+Which of the options below increases alice's salary by 10000?
+alice['salary'] = alice.salary + 10000
+alice['salary'] = alice.['salary'] + 10000
+alice.salary = alice['salary'] + 10000
+DO NOT DO a += x IS WRONG
+
+const a = {b: 1, c: 2, d: 3}
+Which of the following options displays 4?
+const e = {...a, c: 4}
+console.log(e.c)
+-
+const a = [1, 2, 3]
+Which of the following options displays 4?
+const e = [...a, 4]
+const [f] = e
+console.log(f)
+-
+const e = [4, ...a]
+const [f, a, b, c] = e
+console.log(f)
+-
+const e = [...a, 4]
+const [a, b, c, f] = e
+console.log(f)
+
+const handleClick = (parameter = "Hello") => {
+  console.log(parameter)
+}
+Which of the following will display "Hello" in the console?
+<button onClick={() => handleClick("Hello")}>
+  Hello
+</button>
+-
+<button onClick={handleClick}>
+  Hello
+</button>
+
+
