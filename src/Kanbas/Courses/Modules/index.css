@@ -62,3 +62,57 @@
     border-left: green 5px solid;
     font-weight: bold;
 }
+
+.edit {
+    border: 1px solid lightgray;
+    background-color: ghostwhite;
+    color: black;
+    padding: 1px 6px 1px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.edit:hover {
+    border: 1px solid lightgray;
+}
+
+.delete {
+    border: 1px solid lightgray;
+    background-color: maroon;
+    color: white;
+    padding: 1px 6px 1px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.delete:hover {
+    border: 1px solid lightgray;
+}
+
+.button-up {
+    margin-botton: 10px;
+}
+
+.add {
+    font-size: .9em;
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: green;
+    color: white;
+}
+
+.add:hover {
+    background-color: ghostwhite;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.module-box {
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 4px 2px 6px 2px;
+    font-size: .9em;
+    margin-right: 5px;
+    width: 150px;
+}

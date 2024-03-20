@@ -2,7 +2,8 @@
     /*margin-left: 85px;*/
     padding-left: 48px;
     padding-right: 48px;
-    padding-top: 36px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .card-text:hover {
@@ -43,4 +44,58 @@
     font-weight: lighter;
     margin-bottom: 1em;
     text-decoration: none;
+}
+
+.addButton {
+    border: 1px solid lightgray;
+    background-color: green;
+    color: white;
+    padding: 1px 6px 1px 6px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.addButton:hover {
+    border: 1px solid lightgray;
+}
+
+.updateButton {
+    border: 1px solid lightgray;
+    background-color: ghostwhite;
+    color: black;
+    padding: 1px 6px 1px 6px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.updateButton:hover {
+    border: 1px solid lightgray;
+}
+
+.editButton {
+    border: 1px solid lightgray;
+    background-color: ghostwhite;
+    color: black;
+    padding: 1px 6px 1px 6px;
+    border-radius: 4px;
+}
+
+.editButton:hover {
+    border: 1px solid lightgray;
+}
+
+.deleteButton {
+    border: 1px solid lightgray;
+    background-color: darkred;
+    color: white;
+    padding: 1px 6px 1px 6px;
+    border-radius: 4px;
+}
+
+.deleteButton:hover {
+    border: 1px solid lightgray;
+}
+
+label {
+    font-weight: bold;
 }

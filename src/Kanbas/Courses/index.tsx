@@ -29,7 +29,7 @@ import {
 import { useState } from "react";
 import { MdExitToApp, MdHelp, MdMonitor, MdOutlineClose } from "react-icons/md";
 
-function Courses() {
+function Courses({ courses }: { courses: any[] }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
